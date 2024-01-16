@@ -1,0 +1,20 @@
+import unittest
+
+class TestEngineCompliance(unittest.TestCase):
+    def test_temperature(self):
+        # Supposons que nous ayons une fonction `get_engine_temperature` qui renvoie la température actuelle du moteur
+        temperature = get_engine_temperature()
+        
+        # Vérifiez si la température est dans la plage acceptable
+        self.assertTrue(900 <= temperature <= 1200, "La température du moteur est hors de la plage acceptable !")
+
+    def test_pressure(self):
+        # Supposons que nous ayons une fonction `get_engine_pressure` qui renvoie la pression actuelle du moteur
+        pressure = get_engine_pressure()
+        
+        # Vérifiez si la pression est dans la plage acceptable
+        self.assertTrue(15 <= pressure <= 25, "La pression du moteur est hors de la plage acceptable !")
+
+# Exécutez les tests
+if __name__ == '__main__':
+    unittest.main()
